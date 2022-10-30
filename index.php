@@ -108,41 +108,7 @@
      <!-- end services Section  container-->
 
      <!-- Start registration form -->
-
-
-
-     <div class="container pt-5">
-         <h2 class="text-center"> Create an Account</h2>
-
-         <div class="row mt-4 mb-4" center>
-
-             <div class="col-md-6 offset-md-3">
-
-                 <form action="" class="shadow-lg p-4 " method="POST">
-                     <div class="form-group">
-                         <i class="fas fa-user"></i> <label for="name" class="font-weight-bold pl-2">Name </label>
-                         <input class="form-control" type="text" placeholder="Name" name="rName">
-                     </div>
-
-
-                     <div class="form-group">
-                         <i class="fas fa-envelope"></i> <label for="email" class="font-weight-bold pl-2">Email </label>
-                         <input class="form-control" type="email" placeholder="Email" name="rEmail">
-                         <small class="form-text">We'll never share your email with anyone.</small>
-                     </div>
-                     <div class="form-group">
-                         <i class="fas fa-key"></i> <label for="pass" class="font-weight-bold pl-2">New Password </label>
-                         <input class="form-control" type="password" placeholder="Password" name="rPassword">
-                     </div>
-                     <button type="submit" class="btn btn-primary mt-d btn-block shadow-sm font-weight" name="rSignup">
-                         Sign Up</button>
-                     <em style="font-size: 10px;" class="text-center">Note - By clocking Sign Up you agree to Our Terms Data Policy and Cookie Policy</em>
-                 </form>
-
-             </div>
-         </div>
-
-     </div>
+<?php include('userRegistration.php') ?>
      <!-- end registration form Container-->
 
 
@@ -160,7 +126,7 @@
 
                              <img src="images/avatar1.jpg" class="img-fluid" alt="avtl" style="border-radius:100px">
                              <h4 class="card-title">Davevon Craddock</h4>
-                             <p class="card-text">I am very please with the service</p>
+                             <p class="card-text">I  am very please with the service</p>
                          </div>
 
                      </div>
@@ -217,21 +183,13 @@
 
          <h2 class="text-center mb-4">Contact Us</h2>
          <div class="row">
-             <div class="col-md-8">
-                 <!-- sTart 1 colums  -->
-                 <form action="" method="POSt">
-                     <input type="text" class="form-control" name="name" placeholder="Name"><br>
-
-                     <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
-                     <input type="Email" class="form-control" name="Email" placeholder="Email"><br>
-                     <textarea class="form-control" name="message" placeholder="how can we help you?" style="height:150px ;"></textarea><br>
-                     <input type="submit" class="btn btn-primary" value="send" name="submit"><br>
-
-                 </form>
-             </div> <!-- end 1 column -->
+           
+                 <!-- sTart 1 colums  contact -->
+                 <?php include('contactFom.php') ?>
+                <!-- end 1 column -->
 
              <div class="col-md-4 text-center">
-                 <!-- start 2 column -->
+                 <!-- start 2 column  contact-->
 
                  <strong>Headquater:</strong> <br>
                  OSM IT service, <br>
