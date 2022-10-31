@@ -6,7 +6,8 @@ if (!isset($_SESSION['is_login'])){
 if(isset($_REQUEST['rEmail'])){
 $rEmail = mysqli_real_escape_string($conn,trim( $_REQUEST['rEmail']));
 $rPassword = mysqli_real_escape_string($conn, trim($_REQUEST['rPassword']));
-
+#checking to see if the password and email are correct and are in the database
+#if it is in the database it means that it will be going to a next page if not we print an erro
 $sql = "SELECT r_email, r_password FROM requesterlogin_tb WHERE r_email = '".$rEmail."' AND r_password = '".$rPassword."' limit 1";
 
 $result = $conn->query($sql);
