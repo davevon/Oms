@@ -17,7 +17,7 @@ if($conn->connect_error)
     die("Error connection");
 
 } else{
-    echo "Database connection established";
+    echo "";
 }
 
 ?>

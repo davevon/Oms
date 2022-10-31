@@ -1,4 +1,3 @@
- <?php echo "this is a string"; ?>
  <html lang="en">
 
  <head>
