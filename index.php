@@ -41,7 +41,7 @@
                  <li class="nav-item"><a href="index.php" class="nav-link"> Home</a></li>
                  <li class="nav-item"><a href="#Services.php" class="nav-link"> Service</a></li>
                  <li class="nav-item"><a href="Registration.php" class="nav-link"> Registration</a></li>
-                 <li class="nav-item"><a href="Login.php" class="nav-link"> Login</a></li>
+                 <li class="nav-item"><a href="requester/RequesterLogin.php" class="nav-link"> Login</a></li>
                  <li class="nav-item"><a href="#Contact.php" class="nav-link"> Contact</a></li>
 
 
@@ -59,8 +59,8 @@
          <div class="myclass mainHeading">
              <h1 class="text-uppercase text-primary font-weight-bolder">Welcome to OMS</h1>
              <p class="text-uppercase text-danger font-weight-bolder pclass">We give you exactly what you ask for</p>
-             <a href="" class="btn btn-success" mr-4>Login</a>
-             <a href="" class="btn btn-primary" mr-4>signUp</a>
+             <a href="requester/RequesterLogin.php" class="btn btn-success" mr-4>Login</a>
+             <a href="#registration" class="btn btn-primary" mr-4>signUp</a>
 
          </div>
 
