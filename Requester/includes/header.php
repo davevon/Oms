@@ -37,7 +37,7 @@
                            fa-user"></i>Profile</a></li>
 
                          <ul class="nav flex-column">
-                             <li class="nav-item"><a class="nav-lnk" <?php if (PAGE == 'submitRequest') {
+                             <li class="nav-item"><a class="nav-lnk" <?php if (PAGE == 'submitRequest.php') {
                                                                             echo 'active';
                                                                         } ?> href="submitRequest.php"><i class="fab
                            fa-accessible-icon"></i>Submit Request</a></li>

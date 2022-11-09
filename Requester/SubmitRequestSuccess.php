@@ -1,5 +1,5 @@
 <?php 
-define('TITLE','Success');
+define('TITLE','Success Request');
 
 include('includes/header.php');
 include('../dbConnection.php');
@@ -9,12 +9,12 @@ if ($_SESSION['is_login']){
 
 }
 else{
-    echo "<script>location.href='RequesterLogin.php?</script>";
+    echo "<script> location.href='RequesterLogin.php?'</script>";
 }
 
 $sql = "SELECT * FROM submitrequest_tb where request_id = {$_SESSION['myid']}";
 $result = $conn->query($sql);
-if ($result ->num_rows == 1) {
+if ($result->num_rows == 1) {
     $row = $result->fetch_assoc();
 
     # code... displaying the information about the person who is requesting the service...
@@ -23,48 +23,49 @@ if ($result ->num_rows == 1) {
     <table class='table table-striped'>
     <tbody>
     <tr>
-    <th>Reequest Id</th>
+    <th>Request Id</th>
     <td>".$row['request_id']. "</td>
     </tr>
 
       <tr>
-    <th>Reequester Name </th>
-    <td>" . $row['requester_name'] . "</td>
+    <th>Requester Name </th>
+    <td>" .$row['requester_name'] . "</td>
     </tr>
 
 
          <tr>
     <th>Email ID</th>
-    <td>" . $row['requester_email'] . "</td>
+    <td>" .$row['requester_email'] . "</td>
     </tr>
 
     
          <tr>
     <th>Reequest Info</th>
-    <td>" . $row['request_info'] . "</td>
+    <td>" .$row['request_info'] . "</td>
     </tr>
 
     
          <tr>
     <th>Description</th>
-    <td>" . $row['request_desc'] . "</td>
+    <td>" .$row['request_desc'] . "</td>
     </tr>
 
     
     <tr>
     <td><form class='d-print-none'><input class='btn 
-    btn-danger' type='submit' value='print'
+    btn-danger' type='submit' value='Print'
     onClick='window.print()'></form></th>
-    <td>" . $row['request_desc'] . "</td>
     </tr>
     </tbody>
     </table>  
     
-    </div   >";
+    </div>
+    ";
 
 }
 else{
     echo "FAILED";
 }
-
+include('includes/footer.php');
 ?>
+

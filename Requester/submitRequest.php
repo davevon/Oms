@@ -1,6 +1,6 @@
 <?php
 define ('TITLE', 'Submit Request');
-define('PAGE', 'SubmitRequest');
+define('PAGE', 'submitRequest');
         include('includes/header.php');
         include('../dbConnection.php');
         session_start();
@@ -47,8 +47,7 @@ define('PAGE', 'SubmitRequest');
             $msg = "<div class='alert alert-success col-sm-6 ml-5 
             mt-2'>Request Subitted Successfully</div>";
                     $_SESSION['myid'] = $genid;
-                    echo "<script> location.href = 'SubmitRequestSuccess.php';</
-                    script>";
+                    echo "<script> location.href ='SubmitRequestSuccess.php'</script>";
                         }  else {
             # code...
             $msg = "<div class='alert alert-Danger col-sm-6 ml-5 mt-2'>Unable to Subitted your request</div>";

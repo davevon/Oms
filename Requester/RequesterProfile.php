@@ -1,7 +1,7 @@
 <?php
 
 define('TITLE', 'Requester Profile');
-define('PAGE', 'Requester Profile');
+define('PAGE', 'RequesterProfile');
 include('includes/header.php');
 include('../dbConnection.php');
 session_start();
