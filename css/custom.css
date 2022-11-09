@@ -34,7 +34,7 @@ font-weight:bolder;
 }
 
 
-    a:hover{color: rgba(rgb(0, 208, 255), #0375f8, rgb(19, 171, 235), alpha);
+    a:hover{color: rgba(rgb(0, 255, 60), #03f813, rgb(19, 235, 44));
 
     }
 
@@ -43,8 +43,8 @@ font-weight:bolder;
 
     anchor tagged commented out for a reason
 
-    .active {background-color: aqua;
-    color: aqua;}
+    .active {background-color: rgb(0, 255, 26);
+    color: rgb(0, 255, 26);}
 /* Mrgin for Welcome to Osm */
 .mainHeading {
 margin-top: 50px;
