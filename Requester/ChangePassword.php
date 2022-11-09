@@ -13,14 +13,20 @@ if ($_SESSION['is_login']) {
 $rEmail = $_SESSION['rEmail'];
 if (isset($_REQUEST['passupdate'])){
 if ($_REQUEST['rPassword'] == ""){
-    $passmsg = '<div class="alet alert-warning col-sm-6 ml-5">  Fill out all fields</div>';
+    $passmsg = '<div class="alet alert-warning col-sm-6 ml-5">  Fill All Fields</div>';
 }
-    $sql = "UPDATE rrequesterlogin_tb SEt r_password = '$rpass' where r_email = '$remail'";
+else{
+    $rPass = $_REQUEST['rPassword'];
+    $sql = "UPDATE requesterlogin_tb SEt r_password = '$rPass'
+     where r_email = '$rEmail'";
+     
     if ($conn->query($sql) == TRUE) {
         $passmsg = '<div class="alert alert-Success col-sm-6 ml-5 mt-2">Update Successfully</div>';
     } else {
         $passmsg = '<div class="alert alert-Danger col-sm-6 ml-5 mt-2">Unable to Update</div>';
     }
+}
+
 }
 
 ?>
