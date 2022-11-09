@@ -56,7 +56,7 @@
                            fa-key"></i>Change Password</a></li>
 
                                      <ul class="nav flex-column">
-                                         <li class="nav-item"><a class="nav-link" href="RequesterProfile.php"><i class="fas
+                                         <li class="nav-item"><a class="nav-link" href="../Logout.php"><i class="fas
                            fa-sign-out-alt"></i>Logout</a></li>
 
                                      </ul>
