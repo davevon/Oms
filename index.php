@@ -34,7 +34,7 @@
          <a href="index.php" class="navbar-brand">OMS</a>
          <span class="navbar-text">making our Customers statistified</span>
          <button type="button" class="navbar-toggler" data-toggle="collaspe" data-target="#myMenu"></button>
-         
+
          <div class="" id="myMenu">
 
              <ul class="navbar-nav pl-5 custom-nav">
@@ -107,7 +107,7 @@
      <!-- end services Section  container-->
 
      <!-- Start registration form -->
-<?php include('userRegistration.php') ?>
+     <?php include('userRegistration.php') ?>
      <!-- end registration form Container-->
 
 
@@ -125,7 +125,7 @@
 
                              <img src="images/avatar1.jpg" class="img-fluid" alt="avtl" style="border-radius:100px">
                              <h4 class="card-title">Davevon Craddock</h4>
-                             <p class="card-text">I  am very please with the service</p>
+                             <p class="card-text">I am very please with the service</p>
                          </div>
 
                      </div>
@@ -178,14 +178,14 @@
      <!-- End happy Customer -->
 
      <!-- start Contact US -->
-     <div class="container "id="Contact">
+     <div class="container " id="Contact">
 
          <h2 class="text-center mb-4">Contact Us</h2>
          <div class="row">
-           
-                 <!-- sTart 1 colums  contact -->
-                 <?php include('contactFom.php') ?>
-                <!-- end 1 column -->
+
+             <!-- sTart 1 colums  contact -->
+             <?php include('contactFom.php') ?>
+             <!-- end 1 column -->
 
              <div class="col-md-4 text-center">
                  <!-- start 2 column  contact-->

@@ -66,6 +66,5 @@ if ($result->num_rows == 1) {
 else{
     echo "FAILED";
 }
-include('includes/footer.php');
-?>
 
+include('includes/footer.php');
