@@ -54,7 +54,7 @@
 
 
      <!-- start header JUMBOTRON -->
-     <header class="jumbotron back-image" style="background-image:url(images/web.jpg)" ;>
+     <header class="jumbotron back-image" style="background-image:url(images/1.jpg)" ;>
 
          <div class="myclass mainHeading">
              <h1 class="text-uppercase text-primary font-weight-bolder">Welcome to OMS</h1>
