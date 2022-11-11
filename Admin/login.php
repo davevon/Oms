@@ -1,5 +1,4 @@
 <?php
-
 include('../dbConnection.php');
 session_start();
 if (!isset($_SESSION['is_adminlogin'])) {
