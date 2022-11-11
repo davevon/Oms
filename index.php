@@ -234,7 +234,7 @@
                      <!-- start of second column -->
 
                      <small>Designed By Davevon-Craddock &copy; 2022</small>
-                     <small class="ml-2"><a href="#">Admin Login</a></small>
+                     <small class="ml-2"><a href="../Oms/Admin/login.php">Admin Login</a></small>
                  </div>
 
              </div>
