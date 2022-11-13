@@ -31,26 +31,26 @@
                  <!-- start Side bar  1st coolumn-->
                  <div class="sidebar-sticky">
                      <ul class="nav flex-column">
-                         <li class="nav-item"><a class="nav-link <?php if (PAGE == 'RequesterProfile.php') {
+                         <li class="nav-item"><a class="nav-link <?php if (PAGE == 'RequesterProfile') {
                                                                         echo 'active';
                                                                     } ?>" href="RequesterProfile.php"><i class="fas
                            fa-user"></i>Profile</a></li>
 
                          <ul class="nav flex-column">
-                             <li class="nav-item"><a class="nav-lnk" <?php if (PAGE == 'submitRequest.php') {
+                             <li class="nav-item"><a class="nav-lnk" <?php if (PAGE == 'submitRequest') {
                                                                             echo 'active';
                                                                         } ?> href="submitRequest.php"><i class="fab
                            fa-accessible-icon"></i>Submit Request</a></li>
 
 
                              <ul class="nav flex-column">
-                                 <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ServiceSatus.php') {
+                                 <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ServiceStatus') {
                                                                                 echo 'active';
                                                                             } ?> href="ServiceStatus.php"><i class="fas
                            fa-align center"></i>Service Status</a></li>
 
                                  <ul class="nav flex-column">
-                                     <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ChangePassword.php') {
+                                     <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ChangePassword') {
                                                                                     echo 'active';
                                                                                 } ?> href="ChangePassword.php"><i class="fas
                            fa-key"></i>Change Password</a></li>
