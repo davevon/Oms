@@ -1,91 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap Css -->
-
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- font awesome css -->
+<?php
+define('TITLE','DashBoard');
+define('PAGE', 'dashBoard');
+include('../dbConnection.php');
+include('includes/header.php');
+?>
 
 
-    <link rel="stylesheet" href="../css/all.min.css">
 
-    <!-- custome css -->
+            <div class="col-sm-9 col-md-10">
+                <!-- Start DashBBoard 2st column  -->
 
-    <link rel="stylesheet" href="../css/custom.css">
+                <div class="row text-center mx-5">
+                    <div class="col-sm-4  mt-5">
+                        <div class="card text-white bg-success mb-3" 
+                        style="max-width:18rem;">
+                            <div class="card-header">Requests Received</div>
+                            <div class="card-body">
+                            <h4 class="card-title">3</h4>
+                            <a class="btn text-white" href="#">View</a>
+                        </div>
+                    </div>
+                </div >
+                <div class="col-sm-4  mt-5">
+                    <div class="card text-white bg-info mb-3" style="max-width:18rem;">
 
-
-    <!-- google font -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-
-    <title>DashBoard</title>
-
-<body>
-    <!-- top nav bar -->
-    <Nav class="navbar navbar-dark fixed-top bg-success
-    flex-md-nowrap p-0 shadow"><a class="navbar-brand col-sm-3
-     col-md-2 mr-0" href="dashboard.php"> OMS</a></Nav>
-
-    <!-- Start container  -->
-    <div class="container-fluid" style="margin-top: 40px;">
-        <div class="row">
-            <!-- start row  -->
-            <nav class="col-sm-2 bg-light sidebar py-5">
-                <!-- start Side bar  1st coolumn-->
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link <?php if (PAGE == 'dashboard') {
-                                                                    echo 'active';
-                                                                } ?>" href="dashboard.php"><i class="fas
-                           fa-user"></i>Dashboard</a></li>
-
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-lnk" <?php if (PAGE == 'submitRequest.php') {
-                                                                        echo 'active';
-                                                                    } ?> href="submitRequest.php"><i class="fab
-                           fa-accessible-icon"></i>Submit Request</a></li>
-
-
-                            <ul class="nav flex-column">
-                                <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ServiceSatus.php') {
-                                                                                echo 'active';
-                                                                            } ?> href="ServiceStatus.php"><i class="fas
-                           fa-align center"></i>Service Status</a></li>
-
-                                <ul class="nav flex-column">
-                                    <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ChangePassword.php') {
-                                                                                    echo 'active';
-                                                                                } ?> href="ChangePassword.php"><i class="fas
-                           fa-key"></i>Change Password</a></li>
-
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item"><a class="nav-link" href="../Logout.php"><i class="fas
-                           fa-sign-out-alt"></i>Logout</a></li>
-
-                                    </ul>
+                        <div class="card-header">Assigned Word</div>
+                        <div class="card-body">
+                        <h4 class="card-title">2</h4>
+                        <a class="btn text-white" href="#">View</a>
+                    </div>
                 </div>
-            </nav><!-- End SIDE BAR 1st column  -->
-            
-        </div><!-- End row  -->
-    </div> <!-- End Container  -->
+             </div>
+                <div class="col-sm-4  mt-5">
+                    <div class="card text-white bg-primary mb-3" style="max-width:18rem;">
 
-    <!-- JavaScript -->
-    <script src="../js/Jquery.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/all.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</body>
+                        <div class="card-header">No of Technician</div>
+                        <div class="card-body">
+                        <h4 class="card-title">1</h4>
+                        <a class="btn text-white" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="mx-5 mt-5 tecx-center">
+        <p class="bg-dark text-white p-2">List of Requesters</p>
+         <?php
+          $sql = "SELECT * FROM requesterlogin_tb";
+         $result = $conn->query($sql);
+         if($result->num_rows > 0) {
+            echo '<table class="table">
+            <thead>
+            <tr>
+                 <th scope ="col">Requester ID</th>
+                 <th scope ="col">Name</th>
+                 <th scope="col">Email</th>
+                      </tr>
+                      </thead>
+                        <tbody>';
+  while ($row = $result->fetch_assoc()) {
+                     echo '<tr>';
+                      echo '<td>'.$row["r_login_id"].'</td>';
 
-</html>
+                    echo '<td>' . $row["r_name"] . '</td>';
 
-</body>
+                    echo '<td>' . $row["r_email"] . '</td>';
+                     
+                       echo '</tr>';
+                           }     
+                    echo  '</tbody>
+                      </table>';
+         }
+         else{
+            echo '0 Results';
+         }
+         ?>
+         </div>  
 
-</html>
+    </div><!-- End dahsboard Second column  -->
+
+<?php include('includes/footer.php') ?>
