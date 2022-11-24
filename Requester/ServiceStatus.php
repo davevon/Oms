@@ -6,7 +6,7 @@ include('../dbConnection.php');
 
 session_start();
 if (isset($_SESSION['is_login'])) {
-    $aEmail = $_SESSION['aEmail'];
+    $aEmail = $_SESSION['rEmail'];
 } else {
     echo "<script> location.href = 'login.php';
 </script>";

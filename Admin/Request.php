@@ -1,11 +1,10 @@
  <?php
+    session_start();
     define('TITLE', 'Request');
     define('PAGE', 'Request');
     include('../dbConnection.php');
     include('includes/header.php');
-    session_start();
-
-    if (isset($_SESSION['is_adminlogin'])) {
+     if (isset($_SESSION['is_adminlogin'])) {
         $aEmail = $_SESSION['aEmail'];
     } else {
         echo "<script>location.href='login.php';</script>";

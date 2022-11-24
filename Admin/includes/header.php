@@ -38,7 +38,7 @@
     <div class="container-fluid" style="margin-top: 40px;">
         <div class="row">
             <!-- start row  -->
-            <nav class="col-sm-2 bg-light sidebar py-5">
+            <nav class="col-sm-2 bg-light sidebar py-5 d-print-none">
                 <!-- start Side bar  1st coolumn-->
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
@@ -58,7 +58,7 @@
                                 <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Request') {
                                                                                 echo 'active';
                                                                             } ?> href="Request.php"><i class="fas
-                           fa-align center"></i>Requests</a></li>
+                           fa-retweet center"></i>Requests</a></li>
 
 
 
@@ -67,7 +67,7 @@
                                     <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Assets') {
                                                                                     echo 'active';
                                                                                 } ?> href="Assets.php"><i class="fas
-                           fa-align center"></i>Assets</a></li>
+                           fa-bank center"></i>Assets</a></li>
 
 
 
@@ -75,7 +75,7 @@
                                         <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Technicians') {
                                                                                         echo 'active';
                                                                                     } ?> href="Technician.php"><i class="fas
-                           fa-align center"></i>Technicians</a></li>
+                           fa-user-md center"></i>Technicians</a></li>
 
 
 
@@ -84,7 +84,7 @@
                                             <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Requesters') {
                                                                                             echo 'active';
                                                                                         } ?> href="Requester.php"><i class="fas
-                           fa-align center"></i>Requesters</a></li>
+                           fa-user center"></i>Requesters</a></li>
 
 
 
@@ -93,7 +93,7 @@
                                                 <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'SalesReport') {
                                                                                                 echo 'active';
                                                                                             } ?> href="SoldProductReport.php"><i class="fas
-                           fa-align center"></i>Sales Report</a></li>
+                           fa-calendar center"></i>Sales Report</a></li>
 
 
 
