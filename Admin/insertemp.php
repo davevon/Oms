@@ -10,17 +10,16 @@ if (isset($_SESSION['is_adminlogin'])) {
     echo "<script>location.href='login.php';</script>";
 }
 if (isset($_REQUEST['empsubmit'])) {
-    if (($_REQUEST['empName'] == "") || 
-     ($_REQUEST['empCity'] == "") 
-    
+    if (($_REQUEST['empName'] == "") ||
+        ($_REQUEST['empCity'] == "")
         || ($_REQUEST['empMobile'] == "")
-          || ($_REQUEST['empEmail'] == "")
+        || ($_REQUEST['empEmail'] == "")
     ) {
         $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert" >Fill All Fields </div>';
     } else {
         $eName = $_REQUEST['empName'];
         $eCity = $_REQUEST['empCity'];
-        $eMobile= $_REQUEST['empMobile'];
+        $eMobile = $_REQUEST['empMobile'];
         $eEmail = $_REQUEST['empEmail'];
         $sql = "INSERT INTO technician_tb (empName, empCity, empMobile, empEmail ) VALUES ('$eName','$eCity','$eMobile','$eEmail')";
         if ($conn->query($sql) == TRUE) {
