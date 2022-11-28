@@ -42,7 +42,7 @@
                 echo '<td>' . $row['empMobile'] . '</td>';
                 echo '<td>' . $row['empEmail'] . '</td>';
                 echo '<td>';
-                echo '<form action="editremp.php" class="d-inline" method="POST" >';
+                echo '<form action="editemp.php" class="d-inline" method="POST" >';
                 echo '<input type="hidden" name="id" value=' . $row["empid"] . '><button type="submit" class="btn btn-info mr-3" name="edit" value="Edit"><i class="fas fa-pen"></i></button>';
                 echo '</form>';
                 echo '<form action="" class="d-inline" method="POST" >';
