@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 define('TITLE', 'Update Technician');
 define('PAGE', 'Technicians');
