@@ -13,33 +13,31 @@
  </script>";
     }
 
-  if(isset($_REQUEST['psubmit']))  {   
-    if(($_REQUEST['pname'] =="") 
-    || ($_REQUEST['pdop'] == "")
-     || ($_REQUEST['pava'] == "") 
-     || ($_REQUEST['ptotal'] == "") 
-     || ($_REQUEST['poriginalcost'] == "") 
-     || ($_REQUEST['psellingcost'] == "")){
-$msg  = '<div class="alert alert-warning col-sm-6 mt-2" role="alert">Fill All Fields </div>';
-  }  else{
-   $pname = $_REQUEST['pname'];
-    $pdop = $_REQUEST['pdop'];
-    $pava = $_REQUEST['pava'];
-    $ptotal = $_REQUEST['ptotal'];
-    $poriginalcost = $_REQUEST['poriginalcost'];
-    $psellingcost = $_REQUEST['psellingcost'];
-    $sql = "INSERT INTO assets_tb (pname, pdop, pava, ptotal,  poriginalcost, psellingcost) VALUES ('$pname', '$pdop', '$pava',
-     $ptotal', '$poriginalcost', '$psellingcost')";
-     if ($conn->query($sql) == TRUE) {
-        $msg = '<div class="alert alert- success col-sm-6 ml-5 mt-2" role="alert">Added Successfully</div>';
-
-     }else {
-        $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert">Unable to Add </div>';
-     }
-  
-
-}
-  }
+    if (isset($_REQUEST['psubmit'])) {
+        if (($_REQUEST['pname'] == "")
+            || ($_REQUEST['pdop'] == "")
+            || ($_REQUEST['pava'] == "")
+            || ($_REQUEST['ptotal'] == "")
+            || ($_REQUEST['poriginalcost'] == "")
+            || ($_REQUEST['psellingcost'] == "")
+        ) {
+            $msg  = '<div class="alert alert-warning col-sm-6 mt-2" role="alert">Fill All Fields </div>';
+        } else {
+            $pname = $_REQUEST['pname'];
+            $pdop = $_REQUEST['pdop'];
+            $pava = $_REQUEST['pava'];
+            $ptotal = $_REQUEST['ptotal'];
+            $poriginalcost = $_REQUEST['poriginalcost'];
+            $psellingcost = $_REQUEST['psellingcost'];
+            $sql = "INSERT INTO assets_tb (pname, pdop, pava, ptotal,  poriginalcost, psellingcost)
+             VALUES ('$pname', '$pdop', '$pava', '$ptotal', '$poriginalcost', '$psellingcost')";
+            if ($conn->query($sql) == TRUE) {
+                $msg = '<div class="alert alert- success col-sm-6 ml-5 mt-2" role="alert">Added Successfully</div>';
+            } else {
+                $msg = '<div class="alert alert-danger col-sm-6 ml-5 mt-2" role="alert">Unable to Add </div>';
+            }
+        }
+    }
     ?>
  <!-- Start 2nd column -->
 
@@ -97,6 +95,6 @@ $msg  = '<div class="alert alert-warning col-sm-6 mt-2" role="alert">Fill All Fi
          }
      }
  </script>
- <?php 
-include('includes/footer.php');
- ?>
+ <?php
+    include('includes/footer.php');
+    ?>

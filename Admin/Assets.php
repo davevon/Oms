@@ -22,7 +22,7 @@
 
      <?php
         $sql = "SELECT * FROM assets_tb";
-        $result = $conn->query($sql);
+        $result = $conn->query($sql);   
         if ($result->num_rows > 0) {
             echo '<table class="table">';
             echo '<thead>';
@@ -46,7 +46,7 @@
                 echo '<td>' . $row['pava'] .'</td>';
                 echo '<td>' . $row['ptotal'] .'</td>';
                 echo '<td>' . $row['poriginalcost'] .'</td>';
-                echo '<td>' . $row['ptotal'] . '</td>';
+           
                 echo '<td>' . $row['psellingcost'] . '</td>';
                 echo '<td>';
                 echo '<form action="editproduct.php" class="d-inline" method="POST" >';
