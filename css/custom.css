@@ -68,3 +68,13 @@ margin-top: 50px;
 .fi-color:hover{
 color: rgb(48, 117, 227);
 }
+
+#wrapper {
+
+    width: 50%;
+
+    margin: 20px auto;
+
+    border: 2px solid #dad7d7;
+
+}

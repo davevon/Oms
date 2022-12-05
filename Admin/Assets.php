@@ -55,6 +55,9 @@
                 echo '<form action="" class="d-inline" method="POST" >';
                 echo '<input type="hidden" name="id" value=' . $row["pid"] . '><button type="submit" class="btn btn-secondary mr-3" name="delete" value="Delete"><i class="fas fa-trash"></i></button>';
                 echo '</form>';
+                echo '<form action="sellproduct.php" class="d-inline" method="POST" >';
+                echo '<input type="hidden" name="id" value=' . $row["pid"] . '><button type="submit" class="btn btn-warning mr-3" name="issue" value="issue"><i class="fas fa-handshake"></i></button>';
+                echo '</form>';
                 echo '</td>';
                 echo '</tr>';
             }
