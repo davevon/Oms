@@ -45,9 +45,9 @@
                 echo '<td>' . $row['pdop'] .'</td>';
                 echo '<td>' . $row['pava'] .'</td>';
                 echo '<td>' . $row['ptotal'] .'</td>';
-                echo '<td>' . $row['poriginalcost'] .'</td>';
-           
+                echo '<td>' . $row['poriginalcost'] .'</td>';           
                 echo '<td>' . $row['psellingcost'] . '</td>';
+                
                 echo '<td>';
                 echo '<form action="editproduct.php" class="d-inline" method="POST" >';
                 echo '<input type="hidden" name="id" value=' . $row["pid"] . '><button type="submit" class="btn btn-info mr-3" name="edit" value="Edit"><i class="fas fa-pen"></i></button>';

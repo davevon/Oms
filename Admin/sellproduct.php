@@ -12,6 +12,43 @@ if (isset($_SESSION['is_adminlogin'])) {
      location.href = 'login.php';
  </script>";
 }
+if (isset($_REQUEST['psubmit'])) {
+
+    if (($_REQUEST['cname'] == "")
+        || ($_REQUEST['cadd'] == "")
+        || ($_REQUEST['pname'] == "")
+        || ($_REQUEST['pquantity'] == "")
+        || ($_REQUEST['psellingcost'] == "")
+        || ($_REQUEST['totalcost'] == "")
+        || ($_REQUEST['selldate'] == "")
+    ) {
+        $msg = '<div class="alert alert-warning col-sm-6 ml-5 mt-2" role="alert">Fill All Fields </div>';
+    } else {
+
+        $pid = $_REQUEST['pid'];
+        $pava = ($_REQUEST['pava'] - $_REQUEST['pquantity']);
+        $csname = $_REQUEST['cname'];
+        $cadd = $_REQUEST['cadd'];
+        $cpname = $_REQUEST['pname'];
+        $cquan  = $_REQUEST['pquantity'];
+        $ceach = $_REQUEST['psellingcost'];
+        $ctotal = $_REQUEST['totalcost'];
+        $cdate = $_REQUEST['selldate'];
+
+        $sql = "INSERT INTO customer_tb (custname, 
+    custadd, cpname, cpqanitity, cpeach, cptotal,cpdate) 
+    VALUES ('$csname', '$cadd', '$cpname','$cquan', '$ceach', '$ctotal', '$cdate')";
+        if ($conn->query($sql) == TRUE) {
+            $genid = mysqli_insert_id($conn);
+            session_start();
+            $_SESSION['myid'] = $genid;
+            echo "<script> location.href=productsellsuccess.php';</script>";
+        }
+        $sqlup  = "UPDATE assets_tb SET pava =
+         '$pava' WHERE pid = '$pid'";
+        $conn->query($sqlup);
+    }
+}
 ?>
 <div class="col-sm-6 mt-5 mx-3 jumbotron">
     <h3 class="text-center">Customer Bill</h3>
@@ -32,15 +69,11 @@ if (isset($_SESSION['is_adminlogin'])) {
 
         <div class="form-group">
             <label for="cname">Customer Name</label>
-            <input type="text" class="form-control" id="cname" name="cname" value="<?php if (isset($row['cname'])) {
-                                                                                        echo $row['cname'];
-                                                                                    } ?> ">
+            <input type="text" class="form-control" id="cname" name="cname">
         </div>
         <div class="form-group">
             <label for="cadd">Customer Address</label>
-            <input type="date" class="form-control" id="cadd" name="cadd" value="<?php if (isset($row['cadd'])) {
-                                                                                        echo $row['cadd'];
-                                                                                    } ?> ">
+            <input type="text" class="form-control" id="cadd" name="cadd">
 
         </div>
         <div class="form-group">
@@ -54,15 +87,13 @@ if (isset($_SESSION['is_adminlogin'])) {
             <label for="pava">Available</label>
             <input type="text" class="form-control" id="pava" name="pava" value="<?php if (isset($row['pava'])) {
                                                                                         echo $row['pava'];
-                                                                                    } ?> " onkeypress="isInputNumber(event)">
+                                                                                    } ?> " onkeypress="isInputNumber(event)" readonly>
 
         </div>
 
         <div class="form-group">
             <label for="pquantity">Quantity</label>
-            <input type="text" class="form-control" id="pquantity" name="pquantity" value="<?php if (isset($row['pquantity'])) {
-                                                                                                echo $row['pquantity'];
-                                                                                            } ?> " onkeypress="isInputNumber(event)">
+            <input type="text" class="form-control" id="pquantity" name="pquantity">
 
         </div>
 
@@ -75,15 +106,13 @@ if (isset($_SESSION['is_adminlogin'])) {
 
         </div>
         <div class="form-group">
-            <label for="totalcost">Price Each</label>
-            <input type="text" class="form-control" id="totalcost" name="totalcost" >
+            <label for="totalcost">Total Price</label>
+            <input type="text" class="form-control" id="totalcost" name="totalcost">
 
         </div>
         <div class="form-group">
-            <label for="psellingcost">Date</label>
-            <input type="date" class="form-control" id="inputDate" name="sellingdate" value="<?php if (isset($row['psellingcost'])) {
-                                                                                                        echo $row['psellingcost'];
-                                                                                                    } ?> " onkeypress="isInputNumber(event)">
+            <label for="inputDate">Date</label>
+            <input type="date" class="form-control" id="inputDate" name="selldate">
 
         </div>
 
