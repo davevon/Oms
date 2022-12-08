@@ -33,12 +33,12 @@
                 echo '<div class="float-right">';
                 echo '<form action="" method="POST">';
                 echo '<input type="hidden" name="id" value=' . $row["request_id"] . '>';
-                echo '<input type="submit" class="btn btn-primary mr-3" value="View" name="View" >';
-                echo '<input type="submit" class="btn btn-secondary" value="Close" name="Close">';
+                echo '<input type="submit" class="btn btn-primary mr-3" value="View" name="view" >';
+                echo '<input type="submit" class="btn btn-secondary" value="Close" name="close">';
                 echo '</form>';
                 echo '</div>';
                 echo '</div>';
-                echo '</div>';
+                echo '</div>'; 
             }
         }
 

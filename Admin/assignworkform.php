@@ -7,21 +7,21 @@
         } else {
             echo "<script>location.href='login.php';</script>";
         }
-    if (isset($_REQUEST['View'])) {
+    if (isset($_REQUEST['view'])) {
         $sql = "SELECT * FROM submitrequest_tb where request_id = {$_REQUEST['id']}";
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
     }
-    if (isset($_REQUEST['Close'])) {
+    if (isset($_REQUEST['close'])) {
         $sql = "DELETE FROM submitrequest_tb where request_id = {$_REQUEST['id']}";
-        if ($conn->query($sql) === true) {
+        if ($conn->query($sql) == true) {
             echo '<meta http-equiv=" refresh" content = "0;URL=?closed" />';
         } else {
             echo "unable to Delete";
         }
     }
 
-    if (isset($_REQUEST['Assign'])) {
+    if (isset($_REQUEST['Assign'])) { 
         if (($_REQUEST['request_id'] == "")
             ||  ($_REQUEST['request_info'] == "")
             || ($_REQUEST['requestdesc'] == "")
@@ -68,7 +68,7 @@
 
  <div class="col-sm-5 mt-5 jumbotron">
      <!--  Start assigned work 3rd Column -->
-     <form action="" method="" POST>
+     <form action="" method="POST" >
          <h5 class="text-center">Assign Work Order Request</h5>
          <div class="formm-group">
              <label for="request_id">Request ID</label>

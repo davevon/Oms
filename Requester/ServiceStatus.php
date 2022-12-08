@@ -180,8 +180,10 @@ if (isset($_SESSION['is_login'])) {
         }
     } ?>
     <?php
-    
-    if(isset($msg)) {echo $msg;}
+
+    if (isset($msg)) {
+        echo $msg;
+    }
 
     ?>
 </div><!-- End of second column -->
