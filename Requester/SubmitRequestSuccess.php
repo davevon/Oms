@@ -23,7 +23,7 @@ if ($result->num_rows == 1) {
     <table class='table table-striped'>
     <tbody>
     <tr>
-    <th>Request Id</th>
+    <th>Request Id/Service Status</th>
     <td>".$row['request_id']. "</td>
     </tr>
 
