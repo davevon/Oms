@@ -39,7 +39,7 @@ $total = $result->num_rows;
                 <div class="card-header">Requests Received</div>
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $submitrequest; ?></h4>
-                    <a class="btn text-white" href="../Admin/Request.php">View</a>
+                    <a class="btn text-white" href="../admin/request.php">View</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@ $total = $result->num_rows;
                 <div class="card-header">Assigned WorK</div>
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $assignwork; ?></h4>
-                    <a class="btn text-white" href="../Admin/work.php">View</a>
+                    <a class="btn text-white" href="../admin/work.php">View</a>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ $total = $result->num_rows;
                 <div class="card-header">No of Technician</div>
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $total; ?></h4>
-                    <a class="btn text-white" href="../Admin/Technician.php">View</a>
+                    <a class="btn text-white" href="../admin/technician.php">View</a>
                 </div>
             </div>
         </div>

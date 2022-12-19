@@ -57,7 +57,7 @@
                             <ul class="nav flex-column">
                                 <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Request') {
                                                                                 echo 'active';
-                                                                            } ?> href="Request.php"><i class="fas
+                                                                            } ?> href="request.php"><i class="fas
                            fa-retweet center"></i>Requests</a></li>
 
 
@@ -66,7 +66,7 @@
                                 <ul class="nav flex-column">
                                     <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Assets') {
                                                                                     echo 'active';
-                                                                                } ?> href="Assets.php"><i class="fas
+                                                                                } ?> href="assets.php"><i class="fas
                            fa-bank center"></i>Assets</a></li>
 
 
@@ -74,7 +74,7 @@
                                     <ul class="nav flex-column">
                                         <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Technicians') {
                                                                                         echo 'active';
-                                                                                    } ?> href="Technician.php"><i class="fas
+                                                                                    } ?> href="technician.php"><i class="fas
                            fa-user-md center"></i>Technicians</a></li>
 
 
@@ -83,7 +83,7 @@
                                         <ul class="nav flex-column">
                                             <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'Requesters') {
                                                                                             echo 'active';
-                                                                                        } ?> href="Requester.php"><i class="fas
+                                                                                        } ?> href="requester.php"><i class="fas
                            fa-user center"></i>Requesters</a></li>
 
 
@@ -92,7 +92,7 @@
                                             <ul class="nav flex-column">
                                                 <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'SalesReport') {
                                                                                                 echo 'active';
-                                                                                            } ?> href="SoldProductReport.php"><i class="fas
+                                                                                            } ?> href="soldProductReport.php"><i class="fas
                            fa-calendar center"></i>Sales Report</a></li>
 
 
@@ -102,7 +102,7 @@
                                                 <ul class="nav flex-column">
                                                     <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'WorkReport') {
                                                                                                     echo 'active';
-                                                                                                } ?> href="WorkReport.php"><i class="fas
+                                                                                                } ?> href="workReport.php"><i class="fas
                            fa-person-digging"></i>Work Report</a></li>
 
 
@@ -114,11 +114,11 @@
                                                     <ul class="nav flex-column">
                                                         <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ChangePassword.php') {
                                                                                                         echo 'active';
-                                                                                                    } ?> href="ChangePassword.php"><i class="fas
+                                                                                                    } ?> href="changePassword.php"><i class="fas
                            fa-key"></i>Change Password</a></li>
 
                                                         <ul class="nav flex-column">
-                                                            <li class="nav-item"><a class="nav-link" href="../Logout.php"><i class="fas
+                                                            <li class="nav-item"><a class="nav-link" href="../logout.php"><i class="fas
                            fa-sign-out-alt"></i>Logout</a></li>
 
                                                         </ul>

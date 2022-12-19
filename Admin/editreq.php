@@ -61,7 +61,7 @@ if (isset($_REQUEST['requpdate'])) {
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-danger" id="requpdate" name="requpdate">Update    </button>
-<a href="Requester.php" class="btn btn-secondary">Close</a>
+<a href="requester.php" class="btn btn-secondary">Close</a>
         
         </div>
 <?php

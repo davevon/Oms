@@ -17,7 +17,7 @@ if($result->num_rows == 1)
     $_SESSION['is_login'] = true;
         $_SESSION['rEmail'] = $rEmail;
    
-echo "<script>location.href='RequesterProfile.php';</script>";
+echo "<script>location.href='requesterProfile.php';</script>";
 exit;
 }
 else{
@@ -25,7 +25,7 @@ else{
 }
 }
 }else{
-    echo "<script>location.href='RequesterProfile.php';</script>";
+    echo "<script>location.href='requesterProfile.php';</script>";
     exit;
 }
 ?>

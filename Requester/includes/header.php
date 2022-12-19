@@ -33,7 +33,7 @@
                      <ul class="nav flex-column">
                          <li class="nav-item"><a class="nav-link <?php if (PAGE == 'RequesterProfile') {
                                                                         echo 'active';
-                                                                    } ?>" href="RequesterProfile.php"><i class="fas
+                                                                    } ?>" href="requesterProfile.php"><i class="fas
                            fa-user"></i>Profile</a></li>
 
                          <ul class="nav flex-column">
@@ -46,17 +46,17 @@
                              <ul class="nav flex-column">
                                  <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ServiceStatus') {
                                                                                 echo 'active';
-                                                                            } ?> href="ServiceStatus.php"><i class="fas
+                                                                            } ?> href="serviceStatus.php"><i class="fas
                            fa-align center"></i>Service Status</a></li>
 
                                  <ul class="nav flex-column">
                                      <li class="nav-item"><a class="nav-link" <?php if (PAGE == 'ChangePassword') {
                                                                                     echo 'active';
-                                                                                } ?> href="ChangePassword.php"><i class="fas
+                                                                                } ?> href="changePassword.php"><i class="fas
                            fa-key"></i>Change Password</a></li>
 
                                      <ul class="nav flex-column">
-                                         <li class="nav-item"><a class="nav-link" href="../Logout.php"><i class="fas
+                                         <li class="nav-item"><a class="nav-link" href="../logout.php"><i class="fas
                            fa-sign-out-alt"></i>Logout</a></li>
 
                                      </ul>

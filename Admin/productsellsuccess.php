@@ -53,7 +53,7 @@ if ($result->num_rows == 1) {
   </tr>
    <tr>
     <td><form class='d-print-none'><input class='btn btn-danger' type='submit' value='Print' onClick='window.print()'></form></td>
-    <td><a href='Assets.php' class='btn btn-secondary d-print-none'>Close</a></td>
+    <td><a href='assets.php' class='btn btn-secondary d-print-none'>Close</a></td>
   </tr>
   </tbody>
  </table> </div>

@@ -7,7 +7,7 @@ session_start();
 if ($_SESSION['is_login']) {
     $rEmail = $_SESSION['rEmail'];
 } else {
-    echo "<script> location.href='RequesterLogin.php'; </script>";
+    echo "<script> location.href='requesterLogin.php'; </script>";
 }
 
 $sql = "SELECT * FROM requesterlogin_tb WHERE r_email='$rEmail'";

@@ -7,7 +7,7 @@ define('PAGE', 'submitRequest');
         if ($_SESSION['is_login']) {
             $rEmail = $_SESSION['rEmail'];
         }   else {
-            echo "<script>location.href='RequesterLogin.php'</script>";
+            echo "<script>location.href='requesterLogin.php'</script>";
         }
         if (isset($_REQUEST['submitrequest'])) {
             //checking for empty fields
@@ -47,7 +47,7 @@ define('PAGE', 'submitRequest');
             $msg = "<div class='alert alert-success col-sm-6 ml-5 
             mt-2'>Request Subitted Successfully</div>";
                     $_SESSION['myid'] = $genid;
-                    echo "<script> location.href ='SubmitRequestSuccess.php'</script>";
+                    echo "<script> location.href ='submitRequestSuccess.php'</script>";
                         }  else {
             # code...
             $msg = "<div class='alert alert-Danger col-sm-6 ml-5 mt-2'>Unable to Subitted your request</div>";

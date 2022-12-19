@@ -100,7 +100,7 @@
 
          <div class=" text-center">
              <button type="submit" class="btn btn-danger" id="pupdate" name="pupdate">Update</button>
-             <a href="Assets.php" class="btn btn-secondary">Close</a>
+             <a href="assets.php" class="btn btn-secondary">Close</a>
 
          </div>
          <?php if (isset($msg)) {

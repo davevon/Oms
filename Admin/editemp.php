@@ -75,7 +75,7 @@ if (isset($_SESSION['is_adminlogin'])) {
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-danger" id="empupdate" name="empupdate">Update </button>
-            <a href="Requester.php" class="btn btn-secondary">Close</a>
+            <a href="requester.php" class="btn btn-secondary">Close</a>
 
         </div>
         <?php

@@ -9,7 +9,7 @@ if ($_SESSION['is_login']){
 
 }
 else{
-    echo "<script> location.href='RequesterLogin.php?'</script>";
+    echo "<script> location.href='requesterLogin.php?'</script>";
 }
 
 $sql = "SELECT * FROM submitrequest_tb where request_id = {$_SESSION['myid']}";
