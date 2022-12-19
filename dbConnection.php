@@ -1,9 +1,9 @@
 <?php  
 
-$db_host = "localhost";
-$db_user = "root";
-$db_pssword = "";
-$db_name = "oms_database";
+$db_host = "remotemysql.com";
+$db_user = "xNmYtltLOu";
+$db_pssword = "qifRBTxuqz";
+$db_name = "xNmYtltLOu";
 
 
 //create database
