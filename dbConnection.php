@@ -1,23 +1,23 @@
 <?php  
 
-$db_host = "remotemysql.com";
-$db_user = "xNmYtltLOu";
-$db_pssword = "qifRBTxuqz";
-$db_name = "xNmYtltLOu";
+// $db_host = "sql.freedb.tech";
+// $db_user = "freedb_davevon";
+// $db_pssword = "Wrjd7&2X2B3Aqg8";
+// $db_name = "freedb_oms_database";
 
 
-//create database
+$db_host = "localhost";
+$db_user = "root";
+$db_password = "";
+$db_name = "oms_database";
 
-$conn = new mysqli($db_host, $db_user, $db_pssword, $db_name);
+// Create Connection
+$conn = new mysqli($db_host, $db_user, $db_password, $db_name);
 
-// check if database exists
-
-if($conn->connect_error)
-{
-    die("Error connection");
-
-} else{
-    echo "";
+// Check Connection
+if($conn->connect_error) {
+ die("connection failed");
 }
+?>
 
 ?>

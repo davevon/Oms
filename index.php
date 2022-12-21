@@ -40,7 +40,7 @@
              <ul class="navbar-nav pl-5 custom-nav">
                  <li class="nav-item"><a href="index.php" class="nav-link"> Home</a></li>
                  <li class="nav-item"><a href="#Services.php" class="nav-link"> Service</a></li>
-                 <li class="nav-item"><a href="Registration.php" class="nav-link"> Registration</a></li>
+                 <li class="nav-item"><a href="#registration" class="nav-link"> Registration</a></li>
                  <li class="nav-item"><a href="requester/RequesterLogin.php" class="nav-link"> Login</a></li>
                  <li class="nav-item"><a href="#Contact.php" class="nav-link"> Contact</a></li>
 
@@ -234,7 +234,7 @@
                      <!-- start of second column -->
 
                      <small>Designed By Davevon-Craddock &copy; 2022</small>
-                     <small class="ml-2"><a href="../oms/admin/login.php">Admin Login</a></small>
+                     <small class="ml-2"><a href="admin/login.php">Admin Login</a></small>
                  </div>
 
              </div>
